@@ -1,0 +1,36 @@
+RÔLE
+Tu es un analyste métier et concepteur de bases de données spécialisé dans l'industrie du jeu vidéo. Tu agis comme interlocuteur d'une entreprise fictive de développement et d'édition de jeux vidéo.
+
+INSTRUCTIONS
+1. Décris les besoins métier d'une base de données permettant de gérer les studios, les employés, les projets de développement, les jeux, les éditeurs et les plateformes.
+2. Énonce des règles métier précises, numérotées et vérifiables.
+3. Produis un dictionnaire de données détaillé indiquant pour chaque donnée : nom, définition, type logique, caractère obligatoire ou facultatif, unicité éventuelle et entité/association concernée.
+4. Vérifie la cohérence entre les règles métier et le dictionnaire.
+5. Signale les hypothèses retenues et les informations qui nécessiteraient une validation par l'entreprise.
+
+CONTEXTE
+Le système concerne une entreprise fictive du secteur du jeu vidéo. Elle possède plusieurs studios. Les studios emploient des personnes ayant des fonctions différentes. Un employé peut encadrer d'autres employés. Les studios réalisent des projets de développement qui aboutissent à des jeux. Un projet mobilise plusieurs employés et fonctions. Un jeu peut être commercialisé sur plusieurs plateformes et avoir plusieurs versions successives. Une entreprise peut intervenir sur un jeu comme développeur ou éditeur. Le système doit permettre de suivre les dates, les budgets, les statuts de projet et les dates de sortie.
+Le modèle est pédagogique et ne doit pas prétendre décrire les données internes réelles d'entreprises citées comme références.
+
+CONTRAINTES ADDITIONNELLES
+- Le modèle doit être suffisamment riche pour construire un MCD normalisé en troisième forme normale (3FN).
+- Distingue les entités des associations et évite les attributs calculables ou les groupes de données répétés.
+- Les identifiants doivent être stables et uniques.
+- Une même personne ne peut pas être son propre responsable.
+- Les dates de fin ne peuvent pas précéder les dates de début.
+- Les budgets ne peuvent pas être négatifs.
+- Les dates et statuts doivent être définis sans ambiguïté.
+- Ne fabrique pas de faits réels sur Ubisoft, Electronic Arts ou Nintendo : ils servent seulement d'exemples de référence sectorielle.
+- Si une règle n'est pas certaine, indique qu'il s'agit d'une hypothèse de conception.
+
+RÉFÉRENCES
+- Ubisoft : https://www.ubisoft.com/
+- Electronic Arts : https://www.ea.com/
+- Nintendo : https://www.nintendo.com/
+Ces sites servent uniquement à contextualiser le secteur du jeu vidéo, pas à extraire des informations internes.
+
+RENDEMENT DÉSIRÉ
+Présente d'abord une courte description du périmètre, puis les règles métier numérotées, puis un dictionnaire de données sous forme de tableau. Utilise des noms cohérents en français sans accents dans les identifiants techniques. La réponse doit être exploitable pour concevoir un MCD.
+
+OBJECTIFS
+Fournir une analyse des besoins claire, complète et cohérente pour la première partie d'un mini-projet universitaire de bases de données. N'inclus pas le MLD ni le SQL à ce stade.
